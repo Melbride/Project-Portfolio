@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css" >
+    <script src="https://kit.fontawesome.com/f9764a5378.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+      <nav>
+        <!-- <img src="images/logo.png" class="logo"> -->
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Experience</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <img src="images/melby.jpeg" id="menu-image" alt="Description of Image">
+
+      <div class="header-text">
+        <p class="intro-text">Hi, I'm</p>
+        <h1 class="name">Brigit Melbride</h1>
+        <p class="title">Data Scientist  &amp;  Back-end Developer</p>
+
+
+      </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/melby6.jpeg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I'm a passionate Data Analyst, Data Scientist, and Web Developer with over 2 years of experience. I specialize in 
+            Machine Learning and Data Analysis, using advanced algorithms and techniques to extract insights from data and build predictive 
+            models.</p>
+            <br>
+          <p>My expertise includes working with tools like Python, SQL, Pandas, and Power BI to analyze large datasets and derive meaningful 
+            insights. I also have experience in deploying end-to-end machine learning models using scikit-learn and creating interactive 
+            web applications with Django.</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience </p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+
+
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Data Science & Machine Learning</span><br>Python, scikit-learn, pandas, numpy</li>
+              <li><span>Web Development</span><br>Django, HTML, CSS, JavaScript</li>
+              <li><span>Data Visualization(Power BI, matplotlib)</span><br>Creating insightful and actionable visuals</li>
+              <li><span>Data Analysis(SQL, Power BI, pandas)</span><br>Focused on data cleaning, exploration, and insights</li>
+              <!-- <li><span>Data Visualization (Power BI)</span><br>Creating models</li> -->
+
+
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Machine Learning</span><br>2 years Experience</li>
+              <li><span>Web Development (Django, HTML, CSS, Bootstrap)</span><br>Creating models</li>
+              <li><span>Data Visualization (Power BI)</span><br>Creating models</li>
+              <li><span>Data Analysis(SQL,pandas)</span><br>Creating models</li>
+              <!-- <li><span>Data Visualization (Power BI)</span><br>Creating models</li> -->
+
+
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Data Science</span><br>Meru University Of Science And Technology</li>
+              <li><span>Web Development (Django, HTML, CSS, Bootstrap)</span><br>Creating models</li>
+              <li><span>Data Visualization (Power BI)</span><br>Creating models</li>
+              <li><span>Simple learn</span><br>Certificate</li>
+              <!-- <li><span>Data Visualization (Power BI)</span><br>Creating models</li> -->
+
+
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<!-- services -->
+
+<div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>I build and manage web applications using Django, focusing on robust functionality.</p>
+          <!-- <a href="#">Learn more</a> -->
+        </div>
+        <div>
+          <i class="fa-solid fa-head-side-gear"></i>
+          <h2>Machine Learning</h2>
+          <p>I develop and deploy machine learning models to solve complex problems and extract valuable insights from data.</p>
+          <!-- <a href="#">Learn more</a> -->
+        </div>
+        <div>
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+            <h2>Data Analysis</h2>
+            <p>I analyze data using Power BI and SQL to uncover insights, visualize trends, and support data-driven decisions.</p>
+            <!-- <a href="#">Learn more</a> -->
+          </div>
+        </div>
+      </div>
+</div>
+
+
+<!-- Portfolio -->
+<div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/crisis2.jpg">
+          <div class="layer">
+            <h3>Community Crisis Management Platform</h3>
+            <p>Enables users to post emergency alerts, 
+              request resources, and engage in community discussions.</p>
+              <a href="https://github.com/Melbride/Community_Crisis_Management"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/jumia.jpg">
+          <div class="layer">
+            <h3>Jumia Price Scraper</h3>
+            <p>Created a web scraper to track product pricing on Jumia, allowing users to visualize historical data trends.</p>
+              <a href="https://web-scraping-a3qmdbefyyelelmycjdxmb.streamlit.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/churn2.jpg">
+          <div class="layer">
+            <h3>Customer Churn Prediction</h3>
+            <p>Implemented a machine learning model to predict customer churn, focusing on enhancing predictive accuracy 
+              through feature engineering.</p>
+              <a href="https://deploy-6myk3saaabd7p9tgag5fw8.streamlit.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/movie.jpg">
+          <div class="layer">
+            <h3>Movie Analysis Dashboard</h3>
+            <p>Developed an interactive Power BI dashboard for analyzing movie data, <br>providing insights into trends and audience ratings.</p>
+              <a href="https://github.com/Melbride/Capstone-Project"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/financial.jpg">
+          <div class="layer">
+            <h3>Financial Inclusion Prediction Challenge</h3>
+            <p>Participated in the Financial Inclusion Challenge on Zindi, working to predict bank account ownership among 
+              individuals based on demographic features</p>
+              <a href="https://github.com/Melbride/Financial_Inclusion"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- contact -->
+
+<div id="contact">
+    <div class="container">
+     <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-envelope"></i>melbrideb@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>0790117305</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/brigit-melbride-43b8232b7/"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://x.com/b_melbride"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://github.com/Melbride"><i class="fa-brands fa-github"></i></a>
+          <a href="https://wa.me/+254790117305" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
+
+        </div>
+        <a href="images/python  questions.docx" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form>
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+      </div>
+
+
+     </div> 
+    </div>
+    <div class="copyright">
+      <p>© 2024 Brigit Melbride. All Rights Reserved. </p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+  // Select tab links and tab contents separately
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname) {
+    // Remove the active class from all tab links and contents
+    for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
+    for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");   
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+  function closemenu(){
+    sidemenu.style.right = "-200px"
+  }
+</script>
+
+</body>
+</html> 
+
+
+    <!-- <nav id="desktop-nav">
+      <div class="logo">John Doe</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">John Doe</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <!-- <img src="images/melby.jpeg" alt="John Doe profile picture" /> -->
+      <!-- </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Brigit Melbride</h1>
+        <p class="section__text__p2">Data Scientist</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./images/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./images/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+              reprehenderit et laborum, rem, dolore eum quod voluptate
+              exercitationem nobis, nihil esse debitis maxime facere minus sint
+              delectus velit in eos quo officiis explicabo deleniti dignissimos.
+              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+              reiciendis ea magnam? Nulla, impedit fuga!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script> -->
+  
